@@ -7,5 +7,5 @@ spec:
   installPlanApproval: Automatic
   name: etcd
   source: installed-community-global-operators
-  sourceNamespace: test-operators
+  sourceNamespace: test-operator
   startingCSV: etcdoperator.v0.9.2
