@@ -583,7 +583,7 @@ data:
           properties:
            size:
             description: 'Size of the etcd cluster'
-            type: string
+            type: integer
         version: v1beta3
         versions:
         - name: v1beta3
