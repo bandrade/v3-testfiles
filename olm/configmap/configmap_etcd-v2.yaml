@@ -582,7 +582,7 @@ data:
          openAPIV3Schema:
           type: object
           properties:
-           size:
+           sssize:
             description: 'Size of the etcd cluster'
             type: string
 
