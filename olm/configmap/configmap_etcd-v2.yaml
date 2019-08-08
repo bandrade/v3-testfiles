@@ -485,7 +485,7 @@ data:
                         valueFrom:
                           fieldRef:
                             fieldPath: metadata.name
-                      image: quay.io/coreos/etcd-operator@sha256:c0301e4686c3ed4206e370b42de5a3bd2229b9fb4906cf85f3f30650424abec2
+                      image: quay.io/coreos/etcd-operator@sha256:66a37fd61a06a43969854ee6d3e21087a98b93838e284a6086b13917f96b0d9b
                       name: etcd-restore-operator
                     serviceAccountName: etcd-operator
             permissions:
@@ -551,7 +551,7 @@ data:
         - email: support@coreos.com
           name: CoreOS, Inc
         maturity: alpha
-        replaces: etcdoperator.v0.9.4
+        replaces: etcdoperator.v0.9.2
         provider:
           name: CoreOS, Inc
         selector:
