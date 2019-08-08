@@ -551,7 +551,7 @@ data:
         - email: support@coreos.com
           name: CoreOS, Inc
         maturity: alpha
-        replaces: etcdoperator.v0.9.2
+        replaces: etcdoperator.v0.9.4
         provider:
           name: CoreOS, Inc
         selector:
