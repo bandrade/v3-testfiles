@@ -358,4 +358,4 @@ data:
       packageName: etcd
 kind: ConfigMap
 metadata:
-  name: installed-community-global-operators
+  name: scenario3
