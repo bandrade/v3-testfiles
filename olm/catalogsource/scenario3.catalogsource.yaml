@@ -9,4 +9,4 @@ spec:
     base64data: ""
     mediatype: ""
   publisher: Community
-sourceType: internal
+  sourceType: internal
