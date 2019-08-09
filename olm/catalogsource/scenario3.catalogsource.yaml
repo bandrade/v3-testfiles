@@ -3,7 +3,7 @@ apiVersion: operators.coreos.com/v1alpha1
 kind: CatalogSource
 metadata:
   name: scenario3
-  namespace: openshift-operator-lifecycle-manager
+  namespace: scenario3
 spec:
   sourceType: internal
   configMap: scenario3
