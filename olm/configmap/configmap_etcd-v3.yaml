@@ -645,7 +645,7 @@ data:
       - currentCSV: etcdoperator.v0.9.4
         name: beta
       defaultChannel: alpha
-      packageName: etcd
+      packageName: etcd-update
 kind: ConfigMap
 metadata:
   name: installed-community-global-operators
