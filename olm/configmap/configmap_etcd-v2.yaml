@@ -582,10 +582,18 @@ data:
          openAPIV3Schema:
           type: object
           properties:
-           sssize:
-            description: 'Size of the etcd cluster'
-            type: string
-
+           spec:
+            type: object
+            properties:
+             size:
+              description: 'Size of the etcd cluster'
+              type: integer
+             size:
+              description: 'Version of the etcd cluster'
+              type: string              
+            required:
+            - size 
+            - version
       status:
         acceptedNames:
           kind: ""
@@ -639,7 +647,7 @@ data:
       - currentCSV: etcdoperator.v0.9.4
         name: beta
       defaultChannel: alpha
-      packageName: etcd
+      packageName: etcd-update
 kind: ConfigMap
 metadata:
   name: installed-community-global-operators
