@@ -301,11 +301,14 @@ data:
          openAPIV3Schema:
           type: object
           properties:
-           size:
-            description: 'Size of the etcd cluster'
-            type: integer
-          required:
-          - size 
+           spec:
+            type: object
+            properties:
+             size:
+              description: 'Size of the etcd cluster'
+              type: integer
+            required:
+            - size 
       status:
         acceptedNames:
           kind: ""
