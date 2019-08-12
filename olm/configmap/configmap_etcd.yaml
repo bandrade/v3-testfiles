@@ -304,11 +304,8 @@ data:
            size:
             description: 'Size of the etcd cluster'
             type: integer
-          anyOf:
-          - properties:
-             size:
-              minimum: 1
-            required: ["size"]
+          required:
+          - size 
       status:
         acceptedNames:
           kind: ""
