@@ -3,6 +3,5 @@ kind: OperatorGroup
 metadata:
   name: test-operators
 spec:
-  selector:
-    matchLabels:
-      env: "test"
+  targetNamespaces:
+  - test-operators
