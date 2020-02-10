@@ -359,7 +359,7 @@ data:
         storedVersions: null
   packages: |
     - channels:
-      - currentCSV: etcdoperator.v0.9.2
+      - currentCSV: etcdoperator.v0.9.6
         name: alpha
       defaultChannel: "alpha"
       packageName: etcd-olm-1450
