@@ -8,7 +8,7 @@ data:
           alm-examples: '[{"apiVersion":"etcd.database.coreos.com/v1beta2","kind":"EtcdCluster","metadata":{"name":"example","namespace":"default"},"spec":{"size":3,"version":"3.2.13"}},{"apiVersion":"etcd.database.coreos.com/v1beta2","kind":"EtcdRestore","metadata":{"name":"example-etcd-cluster"},"spec":{"etcdCluster":{"name":"example-etcd-cluster"},"backupStorageType":"S3","s3":{"path":"<full-s3-path>","awsSecret":"<aws-secret>"}}},{"apiVersion":"etcd.database.coreos.com/v1beta2","kind":"EtcdBackup","metadata":{"name":"example-etcd-cluster-backup"},"spec":{"etcdEndpoints":["<etcd-cluster-endpoints>"],"storageType":"S3","s3":{"path":"<full-s3-path>","awsSecret":"<aws-secret>"}}}]'
           tectonic-visibility: ocs
         creationTimestamp: null
-        name: etcdoperator.v0.9.2
+        name: etcdoperator.v0.9.6
         namespace: placeholder
         operatorframework.io/cluster-monitoring: true
         operatorframework.io/suggested-namespace: test-operators
@@ -250,7 +250,7 @@ data:
           type: OwnNamespace
         - supported: true
           type: SingleNamespace
-        - supported: false
+        - supported: true
           type: MultiNamespace
         - supported: false
           type: AllNamespaces
