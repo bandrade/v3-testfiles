@@ -8,7 +8,7 @@ data:
           alm-examples: '[{"apiVersion":"etcd.database.coreos.com/v1beta2","kind":"EtcdCluster","metadata":{"name":"example","namespace":"default"},"spec":{"size":3,"version":"3.2.13"}},{"apiVersion":"etcd.database.coreos.com/v1beta2","kind":"EtcdRestore","metadata":{"name":"example-etcd-cluster"},"spec":{"etcdCluster":{"name":"example-etcd-cluster"},"backupStorageType":"S3","s3":{"path":"<full-s3-path>","awsSecret":"<aws-secret>"}}},{"apiVersion":"etcd.database.coreos.com/v1beta2","kind":"EtcdBackup","metadata":{"name":"example-etcd-cluster-backup"},"spec":{"etcdEndpoints":["<etcd-cluster-endpoints>"],"storageType":"S3","s3":{"path":"<full-s3-path>","awsSecret":"<aws-secret>"}}}]'
           tectonic-visibility: ocs
         creationTimestamp: null
-        name: etcdoperator.v0.9.6
+        name: etcdoperator.v0.9.4
         namespace: placeholder
         operatorframework.io/cluster-monitoring: true
         operatorframework.io/suggested-namespace: test-operators
@@ -359,7 +359,7 @@ data:
         storedVersions: null
   packages: |
     - channels:
-      - currentCSV: etcdoperator.v0.9.6
+      - currentCSV: etcdoperator.v0.9.4
         name: alpha
       defaultChannel: "alpha"
       packageName: etcd-olm-1450
